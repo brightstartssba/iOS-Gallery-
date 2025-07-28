@@ -1,0 +1,10 @@
+﻿2025-07-28T15:00:29.3527101Z ##[group]Run ./gradlew assembleDebug --stacktrace
+2025-07-28T15:00:29.3527516Z [36;1m./gradlew assembleDebug --stacktrace[0m
+2025-07-28T15:00:29.3554583Z shell: /usr/bin/bash -e {0}
+2025-07-28T15:00:29.3554827Z env:
+2025-07-28T15:00:29.3555106Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:00:29.3555581Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:00:29.3555916Z ##[endgroup]
+2025-07-28T15:00:31.6275393Z Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
+2025-07-28T15:00:31.6276678Z Caused by: java.lang.ClassNotFoundException: org.gradle.wrapper.GradleWrapperMain
+2025-07-28T15:00:31.6394538Z ##[error]Process completed with exit code 1.
