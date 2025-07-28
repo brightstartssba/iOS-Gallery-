@@ -1,0 +1,10 @@
+﻿2025-07-28T14:15:50.4940111Z ##[group]Run gradle/wrapper-validation-action@v1
+2025-07-28T14:15:50.4941201Z with:
+2025-07-28T14:15:50.4941844Z   min-wrapper-count: 1
+2025-07-28T14:15:50.4942607Z   allow-snapshots: false
+2025-07-28T14:15:50.4943627Z env:
+2025-07-28T14:15:50.4944628Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T14:15:50.4946381Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T14:15:50.4947733Z ##[endgroup]
+2025-07-28T14:15:52.2084750Z ✓ Found known Gradle Wrapper JAR files:
+2025-07-28T14:15:52.2085624Z   91941f522fbfd4431cf57e445fc3d5200c85f957bda2de5251353cf11174f4b5 gradle/wrapper/gradle-wrapper.jar

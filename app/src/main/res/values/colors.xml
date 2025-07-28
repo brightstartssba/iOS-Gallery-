@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="ios_background">#FF000000</color>
-    <color name="ios_card_background">#FF1C1C1E</color>
-    <color name="ios_text_primary">#FFFFFFFF</color>
-    <color name="ios_text_secondary">#FF8E8E93</color>
-    <color name="ios_blue">#FF007AFF</color>
-    <color name="ios_gray">#FF8E8E93</color>
-    <color name="ios_light_gray">#FF2C2C2E</color>
-    <color name="status_bar_color">#FF000000</color>
-    <color name="navigation_bar_color">#FF1C1C1E</color>
-    <color name="photo_overlay">#80000000</color>
+    <color name="background_dark">#000000</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="card_background">#1C1C1E</color>
+    <color name="accent">#007AFF</color>
 </resources>

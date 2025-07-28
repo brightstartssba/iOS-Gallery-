@@ -5,39 +5,35 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.card.MaterialCardView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.RequestOptions
 
-class PhotoAdapter(
-    private var photos: List<Photo>,
-    private val onPhotoClick: (Photo) -> Unit
-) : RecyclerView.Adapter<PhotoAdapter.PhotoViewHolder>() {
-
-    class PhotoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val cardView: MaterialCardView = view.findViewById(R.id.cardPhoto)
-        val imageView: ImageView = view.findViewById(R.id.imagePhoto)
+class PhotoAdapter(private val photos: List<String>) : RecyclerView.Adapter<PhotoAdapter.PhotoViewHolder>() {
+    
+    class PhotoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val imageView: ImageView = itemView.findViewById(R.id.imageView)
     }
-
+    
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_photo, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_photo, parent, false)
         return PhotoViewHolder(view)
     }
-
+    
     override fun onBindViewHolder(holder: PhotoViewHolder, position: Int) {
-        val photo = photos[position]
+        val photoPath = photos[position]
         
-        // Set placeholder image (gray rectangle)
-        holder.imageView.setBackgroundColor(0xFF666666.toInt())
+        val requestOptions = RequestOptions()
+            .transform(CenterCrop(), RoundedCorners(16))
+            .placeholder(R.drawable.ic_launcher_foreground)
+            .error(R.drawable.ic_launcher_foreground)
         
-        holder.cardView.setOnClickListener {
-            onPhotoClick(photo)
-        }
+        Glide.with(holder.itemView.context)
+            .load(photoPath)
+            .apply(requestOptions)
+            .into(holder.imageView)
     }
-
-    override fun getItemCount() = photos.size
-
-    fun updatePhotos(newPhotos: List<Photo>) {
-        photos = newPhotos
-        notifyDataSetChanged()
-    }
+    
+    override fun getItemCount(): Int = photos.size
 }
