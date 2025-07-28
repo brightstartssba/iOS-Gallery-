@@ -1,0 +1,37 @@
+﻿2025-07-28T15:14:18.1198366Z ##[group]Run ./gradlew clean
+2025-07-28T15:14:18.1198644Z [36;1m./gradlew clean[0m
+2025-07-28T15:14:18.1198933Z [36;1m./gradlew assembleDebug --stacktrace --no-daemon[0m
+2025-07-28T15:14:18.1225658Z shell: /usr/bin/bash -e {0}
+2025-07-28T15:14:18.1225878Z env:
+2025-07-28T15:14:18.1226170Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:14:18.1226790Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:14:18.1227148Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2025-07-28T15:14:18.1227418Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2025-07-28T15:14:18.1227655Z ##[endgroup]
+2025-07-28T15:14:18.2123462Z Downloading https://services.gradle.org/distributions/gradle-8.4-bin.zip
+2025-07-28T15:14:20.1335040Z ............10%............20%.............30%............40%.............50%............60%.............70%............80%.............90%............100%
+2025-07-28T15:14:21.2642909Z 
+2025-07-28T15:14:21.2644595Z Welcome to Gradle 8.4!
+2025-07-28T15:14:21.2645104Z 
+2025-07-28T15:14:21.2647180Z Here are the highlights of this release:
+2025-07-28T15:14:21.2649039Z  - Compiling and testing with Java 21
+2025-07-28T15:14:21.2651538Z  - Faster Java compilation on Windows
+2025-07-28T15:14:21.2652820Z  - Role focused dependency configurations creation
+2025-07-28T15:14:21.2653371Z 
+2025-07-28T15:14:21.2655044Z For more details see https://docs.gradle.org/8.4/release-notes.html
+2025-07-28T15:14:21.2655742Z 
+2025-07-28T15:14:21.7635935Z Starting a Gradle Daemon (subsequent builds will be faster)
+2025-07-28T15:14:23.1642495Z 
+2025-07-28T15:14:23.1647216Z FAILURE: Build failed with an exception.
+2025-07-28T15:14:23.1647659Z 
+2025-07-28T15:14:23.1647870Z * What went wrong:
+2025-07-28T15:14:23.1648775Z The specified settings file '/home/runner/work/iOS-Gallery-/iOS-Gallery-/lasspath' does not exist.
+2025-07-28T15:14:23.1649446Z 
+2025-07-28T15:14:23.1649567Z * Try:
+2025-07-28T15:14:23.1650081Z > Run with --stacktrace option to get the stack trace.
+2025-07-28T15:14:23.1650865Z > Run with --info or --debug option to get more log output.
+2025-07-28T15:14:23.1651724Z > Run with --scan to get full insights.
+2025-07-28T15:14:23.1652329Z > Get more help at https://help.gradle.org.
+2025-07-28T15:14:23.1652676Z 
+2025-07-28T15:14:23.1652861Z BUILD FAILED in 4s
+2025-07-28T15:14:23.4890459Z ##[error]Process completed with exit code 1.

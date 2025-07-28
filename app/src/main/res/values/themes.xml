@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.IOSGalleryAndroid" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/accent</item>
-        <item name="colorPrimaryVariant">@color/accent</item>
-        <item name="colorOnPrimary">@color/text_primary</item>
-        <item name="colorSecondary">@color/accent</item>
-        <item name="colorSecondaryVariant">@color/accent</item>
-        <item name="colorOnSecondary">@color/text_primary</item>
-        <item name="android:colorBackground">@color/background_dark</item>
-        <item name="colorOnBackground">@color/text_primary</item>
-        <item name="colorSurface">@color/card_background</item>
-        <item name="colorOnSurface">@color/text_primary</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/background_dark</item>
-        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IOSGallery" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryVariant">#1C1C1E</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#007AFF</item>
+        <item name="colorSecondaryVariant">#0051D9</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorError">#FF453A</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#000000</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
+
+    <style name="Theme.IOSGallery" parent="Base.Theme.IOSGallery" />
 </resources>
