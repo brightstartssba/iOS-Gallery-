@@ -79,9 +79,11 @@ This is an Android gallery application inspired by the iOS Photos app interface.
   - Fixed permission handling to use standard Android APIs
 
 ## User Preferences
-- Language: Vietnamese (user communicated in Vietnamese)
+- Language: Vietnamese (user communicated in Vietnamese)  
 - Preferred interface style: iOS-like design with dark theme
 - Focus on automated CI/CD pipeline without manual intervention
+- User expressed frustration with repeated build failures ("Lỗi nữa rồi", "build apk khó lắm hả")
+- Priority: Get working APK build as soon as possible, even if simplified
 
 ## Project Status
 - ✅ Complete Android project structure created
