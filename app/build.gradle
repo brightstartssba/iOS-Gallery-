@@ -72,8 +72,8 @@ dependencies {
     // ViewPager2 for image viewing
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     
-    // Permissions handling
-    implementation 'com.karumi:dexter:6.2.3'
+    // Permissions handling (removed problematic library)
+    // implementation 'com.karumi:dexter:6.2.3'
     
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

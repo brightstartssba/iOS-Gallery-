@@ -18,12 +18,7 @@ import com.iosgallery.android.adapter.PersonAdapter
 import com.iosgallery.android.databinding.ActivityMainBinding
 import com.iosgallery.android.model.Photo
 import com.iosgallery.android.model.RecentDay
-import com.karumi.dexter.Dexter
-import com.karumi.dexter.PermissionToken
-import com.karumi.dexter.listener.PermissionDeniedResponse
-import com.karumi.dexter.listener.PermissionGrantedResponse
-import com.karumi.dexter.listener.PermissionRequest
-import com.karumi.dexter.listener.single.PermissionListener
+// Removed Dexter imports - using standard Android permissions
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -99,25 +94,28 @@ class MainActivity : AppCompatActivity() {
             Manifest.permission.READ_EXTERNAL_STORAGE
         }
         
-        Dexter.withContext(this)
-            .withPermission(permission)
-            .withListener(object : PermissionListener {
-                override fun onPermissionGranted(response: PermissionGrantedResponse) {
-                    binding.layoutPermission.visibility = View.GONE
-                    loadPhotosFromGallery()
-                }
-                
-                override fun onPermissionDenied(response: PermissionDeniedResponse) {
-                    binding.layoutPermission.visibility = View.VISIBLE
-                }
-                
-                override fun onPermissionRationaleShouldBeShown(
-                    permission: PermissionRequest,
-                    token: PermissionToken
-                ) {
-                    token.continuePermissionRequest()
-                }
-            }).check()
+        if (ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED) {
+            binding.layoutPermission.visibility = View.GONE
+            loadPhotosFromGallery()
+        } else {
+            ActivityCompat.requestPermissions(this, arrayOf(permission), PERMISSION_REQUEST_CODE)
+        }
+    }
+    
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == PERMISSION_REQUEST_CODE) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                binding.layoutPermission.visibility = View.GONE
+                loadPhotosFromGallery()
+            } else {
+                binding.layoutPermission.visibility = View.VISIBLE
+            }
+        }
     }
     
     private fun loadPhotosFromGallery() {
