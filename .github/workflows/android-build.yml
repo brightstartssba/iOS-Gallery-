@@ -20,6 +20,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        cache: gradle
         
     - name: Cache Gradle packages
       uses: actions/cache@v3
@@ -34,8 +35,11 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
       
+    - name: Clean project
+      run: ./gradlew clean --no-daemon
+      
     - name: Build debug APK
-      run: ./gradlew assembleDebug --no-daemon --stacktrace
+      run: ./gradlew assembleDebug --no-daemon --stacktrace --info
       
     - name: Upload debug APK
       uses: actions/upload-artifact@v4
@@ -44,12 +48,12 @@ jobs:
         path: app/build/outputs/apk/debug/app-debug.apk
         
     - name: Build release APK (unsigned)
-      run: ./gradlew assembleRelease --no-daemon --stacktrace
+      run: ./gradlew assembleRelease --no-daemon --stacktrace --info
       continue-on-error: true
       
     - name: Upload release APK
       uses: actions/upload-artifact@v4
       with:
         name: app-release
-        path: app/build/outputs/apk/release/app-release.apk
+        path: app/build/outputs/apk/release/app-release-unsigned.apk
         if-no-files-found: ignore
