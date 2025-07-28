@@ -1,0 +1,28 @@
+﻿2025-07-28T13:53:56.7890863Z ##[group]Run ./gradlew clean --no-daemon
+2025-07-28T13:53:56.7891960Z [36;1m./gradlew clean --no-daemon[0m
+2025-07-28T13:53:56.7923430Z shell: /usr/bin/bash -e {0}
+2025-07-28T13:53:56.7924237Z env:
+2025-07-28T13:53:56.7925483Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T13:53:56.7927195Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T13:53:56.7928501Z ##[endgroup]
+2025-07-28T13:53:58.5665004Z Downloading https://services.gradle.org/distributions/gradle-8.0.2-bin.zip
+2025-07-28T13:54:01.1963091Z ...........10%............20%............30%............40%............50%............60%...........70%............80%............90%............100%
+2025-07-28T13:54:01.3463889Z ##[error]Exception in thread "main" java.lang.RuntimeException: Verification of Gradle distribution failed!
+2025-07-28T13:54:01.3472119Z 
+2025-07-28T13:54:01.3472682Z Your Gradle distribution may have been tampered with.
+2025-07-28T13:54:01.3473406Z Confirm that the 'distributionSha256Sum' property in your gradle-wrapper.properties file is correct and you are downloading the wrapper from a trusted source.
+2025-07-28T13:54:01.3474006Z 
+2025-07-28T13:54:01.3474259Z  Distribution Url: https://services.gradle.org/distributions/gradle-8.0.2-bin.zip
+2025-07-28T13:54:01.3475209Z Download Location: /home/runner/.gradle/wrapper/dists/gradle-8.0.2-bin/25jlreiuz6u3xu2phlpa2vv4m/gradle-8.0.2-bin.zip
+2025-07-28T13:54:01.3475881Z Expected checksum: '038794feef1f4745c6347107b6726279d1c824f3fc634b60f86ace1e9fbd1768'
+2025-07-28T13:54:01.3476405Z   Actual checksum: 'ff7bf6a86f09b9b2c40bb8f48b25fc19cf2b2664fd1d220cd7ab833ec758d0d7'
+2025-07-28T13:54:01.3476755Z 
+2025-07-28T13:54:01.3476978Z 	at org.gradle.wrapper.Install.verifyDownloadChecksum(Install.java:179)
+2025-07-28T13:54:01.3477403Z 	at org.gradle.wrapper.Install.access$800(Install.java:42)
+2025-07-28T13:54:01.3477770Z 	at org.gradle.wrapper.Install$1.call(Install.java:93)
+2025-07-28T13:54:01.3478118Z 	at org.gradle.wrapper.Install$1.call(Install.java:63)
+2025-07-28T13:54:01.3478650Z 	at org.gradle.wrapper.ExclusiveFileAccessManager.access(ExclusiveFileAccessManager.java:69)
+2025-07-28T13:54:01.3479160Z 	at org.gradle.wrapper.Install.createDist(Install.java:63)
+2025-07-28T13:54:01.3479584Z 	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:109)
+2025-07-28T13:54:01.3480052Z 	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:66)
+2025-07-28T13:54:01.3574034Z ##[error]Process completed with exit code 1.

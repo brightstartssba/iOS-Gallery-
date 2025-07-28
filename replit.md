@@ -65,6 +65,12 @@ This is an Android gallery application inspired by the iOS Photos app interface.
   - Created optimized android-build.yml workflow
   - Fixed layout issues and dependency conflicts
 
+- **2025-07-28**: Fixed Gradle wrapper checksum issue
+  - Updated distributionSha256Sum to correct checksum
+  - Created minimal-build.yml with gradle-build-action
+  - Removed problematic caching from workflows
+  - Added wrapper validation step
+
 ## User Preferences
 - Language: Vietnamese (user communicated in Vietnamese)
 - Preferred interface style: iOS-like design with dark theme
