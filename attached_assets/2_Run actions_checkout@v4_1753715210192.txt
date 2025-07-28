@@ -1,0 +1,69 @@
+﻿2025-07-28T15:04:56.9852899Z ##[group]Run actions/checkout@v4
+2025-07-28T15:04:56.9853833Z with:
+2025-07-28T15:04:56.9854304Z   repository: brightstartssba/iOS-Gallery-
+2025-07-28T15:04:56.9855125Z   token: ***
+2025-07-28T15:04:56.9855534Z   ssh-strict: true
+2025-07-28T15:04:56.9855945Z   ssh-user: git
+2025-07-28T15:04:56.9856372Z   persist-credentials: true
+2025-07-28T15:04:56.9856839Z   clean: true
+2025-07-28T15:04:56.9857400Z   sparse-checkout-cone-mode: true
+2025-07-28T15:04:56.9857930Z   fetch-depth: 1
+2025-07-28T15:04:56.9858336Z   fetch-tags: false
+2025-07-28T15:04:56.9859018Z   show-progress: true
+2025-07-28T15:04:56.9859459Z   lfs: false
+2025-07-28T15:04:56.9859844Z   submodules: false
+2025-07-28T15:04:56.9860271Z   set-safe-directory: true
+2025-07-28T15:04:56.9861004Z ##[endgroup]
+2025-07-28T15:04:57.2543617Z Syncing repository: brightstartssba/iOS-Gallery-
+2025-07-28T15:04:57.2547193Z ##[group]Getting Git version info
+2025-07-28T15:04:57.2549304Z Working directory is '/home/runner/work/iOS-Gallery-/iOS-Gallery-'
+2025-07-28T15:04:57.2552022Z [command]/usr/bin/git version
+2025-07-28T15:04:57.2653452Z git version 2.50.1
+2025-07-28T15:04:57.2687146Z ##[endgroup]
+2025-07-28T15:04:57.2708189Z Temporarily overriding HOME='/home/runner/work/_temp/f53e621e-e620-4c8a-b4ee-09c7f367b6fe' before making global git config changes
+2025-07-28T15:04:57.2711037Z Adding repository directory to the temporary git global config as a safe directory
+2025-07-28T15:04:57.2713560Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/iOS-Gallery-/iOS-Gallery-
+2025-07-28T15:04:57.2754082Z Deleting the contents of '/home/runner/work/iOS-Gallery-/iOS-Gallery-'
+2025-07-28T15:04:57.2757793Z ##[group]Initializing the repository
+2025-07-28T15:04:57.2762106Z [command]/usr/bin/git init /home/runner/work/iOS-Gallery-/iOS-Gallery-
+2025-07-28T15:04:57.2853482Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-07-28T15:04:57.2856192Z hint: is subject to change. To configure the initial branch name to use in all
+2025-07-28T15:04:57.2858301Z hint: of your new repositories, which will suppress this warning, call:
+2025-07-28T15:04:57.2860769Z hint:
+2025-07-28T15:04:57.2862414Z hint: 	git config --global init.defaultBranch <name>
+2025-07-28T15:04:57.2864239Z hint:
+2025-07-28T15:04:57.2865540Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-07-28T15:04:57.2867661Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-07-28T15:04:57.2869945Z hint:
+2025-07-28T15:04:57.2870905Z hint: 	git branch -m <name>
+2025-07-28T15:04:57.2871992Z hint:
+2025-07-28T15:04:57.2873568Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-07-28T15:04:57.2877290Z Initialized empty Git repository in /home/runner/work/iOS-Gallery-/iOS-Gallery-/.git/
+2025-07-28T15:04:57.2881602Z [command]/usr/bin/git remote add origin https://github.com/brightstartssba/iOS-Gallery-
+2025-07-28T15:04:57.2914975Z ##[endgroup]
+2025-07-28T15:04:57.2916916Z ##[group]Disabling automatic garbage collection
+2025-07-28T15:04:57.2918912Z [command]/usr/bin/git config --local gc.auto 0
+2025-07-28T15:04:57.2947365Z ##[endgroup]
+2025-07-28T15:04:57.2949198Z ##[group]Setting up auth
+2025-07-28T15:04:57.2952739Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-07-28T15:04:57.2983083Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-07-28T15:04:57.3352009Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-07-28T15:04:57.3383157Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-07-28T15:04:57.3608914Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-07-28T15:04:57.3654731Z ##[endgroup]
+2025-07-28T15:04:57.3656553Z ##[group]Fetching the repository
+2025-07-28T15:04:57.3668208Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3e8bbc949dc1949f8de478029f3dcac1c4291db9:refs/remotes/origin/main
+2025-07-28T15:04:57.6656621Z From https://github.com/brightstartssba/iOS-Gallery-
+2025-07-28T15:04:57.6659148Z  * [new ref]         3e8bbc949dc1949f8de478029f3dcac1c4291db9 -> origin/main
+2025-07-28T15:04:57.6684803Z ##[endgroup]
+2025-07-28T15:04:57.6687011Z ##[group]Determining the checkout info
+2025-07-28T15:04:57.6689108Z ##[endgroup]
+2025-07-28T15:04:57.6691949Z [command]/usr/bin/git sparse-checkout disable
+2025-07-28T15:04:57.6732413Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-07-28T15:04:57.6762637Z ##[group]Checking out the ref
+2025-07-28T15:04:57.6765924Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-07-28T15:04:57.7029750Z Switched to a new branch 'main'
+2025-07-28T15:04:57.7032611Z branch 'main' set up to track 'origin/main'.
+2025-07-28T15:04:57.7042417Z ##[endgroup]
+2025-07-28T15:04:57.7082775Z [command]/usr/bin/git log -1 --format=%H
+2025-07-28T15:04:57.7105817Z 3e8bbc949dc1949f8de478029f3dcac1c4291db9

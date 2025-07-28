@@ -1,0 +1,213 @@
+﻿2025-07-28T15:04:55.7752213Z Current runner version: '2.326.0'
+2025-07-28T15:04:55.7787984Z ##[group]Operating System
+2025-07-28T15:04:55.7789553Z Ubuntu
+2025-07-28T15:04:55.7790487Z 24.04.2
+2025-07-28T15:04:55.7791231Z LTS
+2025-07-28T15:04:55.7792265Z ##[endgroup]
+2025-07-28T15:04:55.7793103Z ##[group]Runner Image
+2025-07-28T15:04:55.7794099Z Image: ubuntu-24.04
+2025-07-28T15:04:55.7795236Z Version: 20250720.1.0
+2025-07-28T15:04:55.7796939Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250720.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-07-28T15:04:55.7799636Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250720.1
+2025-07-28T15:04:55.7801158Z ##[endgroup]
+2025-07-28T15:04:55.7801966Z ##[group]Runner Image Provisioner
+2025-07-28T15:04:55.7802943Z 2.0.449.1
+2025-07-28T15:04:55.7803715Z ##[endgroup]
+2025-07-28T15:04:55.7805397Z ##[group]GITHUB_TOKEN Permissions
+2025-07-28T15:04:55.7808080Z Contents: read
+2025-07-28T15:04:55.7809088Z Metadata: read
+2025-07-28T15:04:55.7810254Z Packages: read
+2025-07-28T15:04:55.7811215Z ##[endgroup]
+2025-07-28T15:04:55.7814887Z Secret source: Actions
+2025-07-28T15:04:55.7815942Z Prepare workflow directory
+2025-07-28T15:04:55.8295260Z Prepare all required actions
+2025-07-28T15:04:55.8353857Z Getting action download info
+2025-07-28T15:04:56.1783788Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-07-28T15:04:56.1784981Z Version: 4.2.2
+2025-07-28T15:04:56.1785968Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-07-28T15:04:56.1787185Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-07-28T15:04:56.1787996Z ##[endgroup]
+2025-07-28T15:04:56.3026172Z ##[group]Download immutable action package 'actions/setup-java@v4'
+2025-07-28T15:04:56.3026987Z Version: 4.7.1
+2025-07-28T15:04:56.3027823Z Digest: sha256:23223d64943473efb4336f60463c0429cd4f422cd5fc6c48a5cf0d5907c1aeac
+2025-07-28T15:04:56.3029064Z Source commit SHA: c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+2025-07-28T15:04:56.3029890Z ##[endgroup]
+2025-07-28T15:04:56.5980849Z ##[group]Download immutable action package 'actions/cache@v4'
+2025-07-28T15:04:56.5981656Z Version: 4.2.3
+2025-07-28T15:04:56.5982529Z Digest: sha256:c8a3bb963e1f1826d8fcc8d1354f0dd29d8ac1db1d4f6f20247055ae11b81ed9
+2025-07-28T15:04:56.5983577Z Source commit SHA: 5a3ec84eff668545956fd18022155c47e93e2684
+2025-07-28T15:04:56.5984311Z ##[endgroup]
+2025-07-28T15:04:56.7045602Z ##[group]Download immutable action package 'actions/upload-artifact@v4'
+2025-07-28T15:04:56.7046452Z Version: 4.6.2
+2025-07-28T15:04:56.7047313Z Digest: sha256:290722aa3281d5caf23d0acdc3dbeb3424786a1a01a9cc97e72f147225e37c38
+2025-07-28T15:04:56.7048295Z Source commit SHA: ea165f8d65b6e75b540449e92b4886f43607fa02
+2025-07-28T15:04:56.7049255Z ##[endgroup]
+2025-07-28T15:04:56.9140333Z Complete job name: build
+2025-07-28T15:04:56.9852933Z ##[group]Run actions/checkout@v4
+2025-07-28T15:04:56.9853844Z with:
+2025-07-28T15:04:56.9854308Z   repository: brightstartssba/iOS-Gallery-
+2025-07-28T15:04:56.9855130Z   token: ***
+2025-07-28T15:04:56.9855537Z   ssh-strict: true
+2025-07-28T15:04:56.9855948Z   ssh-user: git
+2025-07-28T15:04:56.9856376Z   persist-credentials: true
+2025-07-28T15:04:56.9856843Z   clean: true
+2025-07-28T15:04:56.9857404Z   sparse-checkout-cone-mode: true
+2025-07-28T15:04:56.9857933Z   fetch-depth: 1
+2025-07-28T15:04:56.9858340Z   fetch-tags: false
+2025-07-28T15:04:56.9859022Z   show-progress: true
+2025-07-28T15:04:56.9859462Z   lfs: false
+2025-07-28T15:04:56.9859846Z   submodules: false
+2025-07-28T15:04:56.9860274Z   set-safe-directory: true
+2025-07-28T15:04:56.9861018Z ##[endgroup]
+2025-07-28T15:04:57.2543676Z Syncing repository: brightstartssba/iOS-Gallery-
+2025-07-28T15:04:57.2547223Z ##[group]Getting Git version info
+2025-07-28T15:04:57.2549435Z Working directory is '/home/runner/work/iOS-Gallery-/iOS-Gallery-'
+2025-07-28T15:04:57.2552046Z [command]/usr/bin/git version
+2025-07-28T15:04:57.2653487Z git version 2.50.1
+2025-07-28T15:04:57.2687169Z ##[endgroup]
+2025-07-28T15:04:57.2708216Z Temporarily overriding HOME='/home/runner/work/_temp/f53e621e-e620-4c8a-b4ee-09c7f367b6fe' before making global git config changes
+2025-07-28T15:04:57.2711048Z Adding repository directory to the temporary git global config as a safe directory
+2025-07-28T15:04:57.2713576Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/iOS-Gallery-/iOS-Gallery-
+2025-07-28T15:04:57.2754112Z Deleting the contents of '/home/runner/work/iOS-Gallery-/iOS-Gallery-'
+2025-07-28T15:04:57.2757812Z ##[group]Initializing the repository
+2025-07-28T15:04:57.2762129Z [command]/usr/bin/git init /home/runner/work/iOS-Gallery-/iOS-Gallery-
+2025-07-28T15:04:57.2853513Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-07-28T15:04:57.2856227Z hint: is subject to change. To configure the initial branch name to use in all
+2025-07-28T15:04:57.2858313Z hint: of your new repositories, which will suppress this warning, call:
+2025-07-28T15:04:57.2860791Z hint:
+2025-07-28T15:04:57.2862424Z hint: 	git config --global init.defaultBranch <name>
+2025-07-28T15:04:57.2864248Z hint:
+2025-07-28T15:04:57.2865545Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-07-28T15:04:57.2867669Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-07-28T15:04:57.2869957Z hint:
+2025-07-28T15:04:57.2870909Z hint: 	git branch -m <name>
+2025-07-28T15:04:57.2871996Z hint:
+2025-07-28T15:04:57.2873577Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-07-28T15:04:57.2877301Z Initialized empty Git repository in /home/runner/work/iOS-Gallery-/iOS-Gallery-/.git/
+2025-07-28T15:04:57.2881613Z [command]/usr/bin/git remote add origin https://github.com/brightstartssba/iOS-Gallery-
+2025-07-28T15:04:57.2914995Z ##[endgroup]
+2025-07-28T15:04:57.2916971Z ##[group]Disabling automatic garbage collection
+2025-07-28T15:04:57.2918923Z [command]/usr/bin/git config --local gc.auto 0
+2025-07-28T15:04:57.2947388Z ##[endgroup]
+2025-07-28T15:04:57.2949206Z ##[group]Setting up auth
+2025-07-28T15:04:57.2952764Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-07-28T15:04:57.2983112Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-07-28T15:04:57.3352069Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-07-28T15:04:57.3383189Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-07-28T15:04:57.3609369Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-07-28T15:04:57.3654763Z ##[endgroup]
+2025-07-28T15:04:57.3656565Z ##[group]Fetching the repository
+2025-07-28T15:04:57.3668241Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3e8bbc949dc1949f8de478029f3dcac1c4291db9:refs/remotes/origin/main
+2025-07-28T15:04:57.6656719Z From https://github.com/brightstartssba/iOS-Gallery-
+2025-07-28T15:04:57.6659168Z  * [new ref]         3e8bbc949dc1949f8de478029f3dcac1c4291db9 -> origin/main
+2025-07-28T15:04:57.6684825Z ##[endgroup]
+2025-07-28T15:04:57.6687029Z ##[group]Determining the checkout info
+2025-07-28T15:04:57.6689116Z ##[endgroup]
+2025-07-28T15:04:57.6691970Z [command]/usr/bin/git sparse-checkout disable
+2025-07-28T15:04:57.6732444Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-07-28T15:04:57.6762674Z ##[group]Checking out the ref
+2025-07-28T15:04:57.6766009Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-07-28T15:04:57.7029838Z Switched to a new branch 'main'
+2025-07-28T15:04:57.7032631Z branch 'main' set up to track 'origin/main'.
+2025-07-28T15:04:57.7042442Z ##[endgroup]
+2025-07-28T15:04:57.7082805Z [command]/usr/bin/git log -1 --format=%H
+2025-07-28T15:04:57.7105879Z 3e8bbc949dc1949f8de478029f3dcac1c4291db9
+2025-07-28T15:04:57.7443149Z ##[group]Run actions/setup-java@v4
+2025-07-28T15:04:57.7444190Z with:
+2025-07-28T15:04:57.7444910Z   distribution: temurin
+2025-07-28T15:04:57.7445921Z   java-version: 17
+2025-07-28T15:04:57.7446721Z   java-package: jdk
+2025-07-28T15:04:57.7447522Z   check-latest: false
+2025-07-28T15:04:57.7448386Z   server-id: github
+2025-07-28T15:04:57.7449477Z   server-username: GITHUB_ACTOR
+2025-07-28T15:04:57.7450483Z   server-password: GITHUB_TOKEN
+2025-07-28T15:04:57.7451460Z   overwrite-settings: true
+2025-07-28T15:04:57.7452355Z   job-status: success
+2025-07-28T15:04:57.7453437Z   token: ***
+2025-07-28T15:04:57.7454182Z ##[endgroup]
+2025-07-28T15:04:57.9495090Z ##[group]Installed distributions
+2025-07-28T15:04:57.9537823Z Resolved Java 17.0.16+8 from tool-cache
+2025-07-28T15:04:57.9539961Z Setting Java 17.0.16+8 as the default
+2025-07-28T15:04:57.9552799Z Creating toolchains.xml for JDK version 17 from temurin
+2025-07-28T15:04:57.9628489Z Writing to /home/runner/.m2/toolchains.xml
+2025-07-28T15:04:57.9630163Z 
+2025-07-28T15:04:57.9630730Z Java configuration:
+2025-07-28T15:04:57.9632138Z   Distribution: temurin
+2025-07-28T15:04:57.9633643Z   Version: 17.0.16+8
+2025-07-28T15:04:57.9635629Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:57.9637454Z 
+2025-07-28T15:04:57.9639006Z ##[endgroup]
+2025-07-28T15:04:57.9658191Z Creating settings.xml with server-id: github
+2025-07-28T15:04:57.9660405Z Writing to /home/runner/.m2/settings.xml
+2025-07-28T15:04:58.0968621Z ##[group]Run actions/cache@v4
+2025-07-28T15:04:58.0970174Z with:
+2025-07-28T15:04:58.0970938Z   path: ~/.gradle/caches
+~/.gradle/wrapper
+
+2025-07-28T15:04:58.0972552Z   key: gradle-Linux-23697de1d8a4f479c3b850262f6636acb6468b372da71403e2ff2846a447282a
+2025-07-28T15:04:58.0974170Z   restore-keys: gradle-Linux-
+2025-07-28T15:04:58.0975073Z   enableCrossOsArchive: false
+2025-07-28T15:04:58.0976045Z   fail-on-cache-miss: false
+2025-07-28T15:04:58.0976885Z   lookup-only: false
+2025-07-28T15:04:58.0977647Z   save-always: false
+2025-07-28T15:04:58.0978377Z env:
+2025-07-28T15:04:58.0979521Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:58.0981307Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:58.0982676Z ##[endgroup]
+2025-07-28T15:04:58.3104305Z Cache not found for input keys: gradle-Linux-23697de1d8a4f479c3b850262f6636acb6468b372da71403e2ff2846a447282a, gradle-Linux-
+2025-07-28T15:04:58.3212746Z ##[group]Run chmod +x gradlew
+2025-07-28T15:04:58.3213777Z [36;1mchmod +x gradlew[0m
+2025-07-28T15:04:58.3247572Z shell: /usr/bin/bash -e {0}
+2025-07-28T15:04:58.3248459Z env:
+2025-07-28T15:04:58.3249717Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:58.3251512Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:58.3252952Z ##[endgroup]
+2025-07-28T15:04:58.3399070Z ##[group]Run ./gradlew clean
+2025-07-28T15:04:58.3400041Z [36;1m./gradlew clean[0m
+2025-07-28T15:04:58.3428676Z shell: /usr/bin/bash -e {0}
+2025-07-28T15:04:58.3430205Z env:
+2025-07-28T15:04:58.3431281Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:58.3433076Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:58.3434483Z ##[endgroup]
+2025-07-28T15:05:00.5470824Z Downloading https://services.gradle.org/distributions/gradle-8.4-bin.zip
+2025-07-28T15:05:03.2384402Z ............10%............20%.............30%............40%.............50%............60%.............70%............80%.............90%............100%
+2025-07-28T15:05:04.5232841Z 
+2025-07-28T15:05:04.5252960Z Welcome to Gradle 8.4!
+2025-07-28T15:05:04.5253624Z 
+2025-07-28T15:05:04.5254161Z Here are the highlights of this release:
+2025-07-28T15:05:04.5255166Z  - Compiling and testing with Java 21
+2025-07-28T15:05:04.5262494Z  - Faster Java compilation on Windows
+2025-07-28T15:05:04.5263187Z  - Role focused dependency configurations creation
+2025-07-28T15:05:04.5263556Z 
+2025-07-28T15:05:04.5263918Z For more details see https://docs.gradle.org/8.4/release-notes.html
+2025-07-28T15:05:04.5264386Z 
+2025-07-28T15:05:04.9178183Z Starting a Gradle Daemon (subsequent builds will be faster)
+2025-07-28T15:05:06.3179601Z 
+2025-07-28T15:05:06.3631024Z FAILURE: Build failed with an exception.
+2025-07-28T15:05:06.3634089Z 
+2025-07-28T15:05:06.3634587Z * What went wrong:
+2025-07-28T15:05:06.3636916Z The specified settings file '/home/runner/work/iOS-Gallery-/iOS-Gallery-/lasspath' does not exist.
+2025-07-28T15:05:06.3637649Z 
+2025-07-28T15:05:06.3637796Z * Try:
+2025-07-28T15:05:06.3638261Z > Run with --stacktrace option to get the stack trace.
+2025-07-28T15:05:06.3639204Z > Run with --info or --debug option to get more log output.
+2025-07-28T15:05:06.3639795Z > Run with --scan to get full insights.
+2025-07-28T15:05:06.3640367Z > Get more help at https://help.gradle.org.
+2025-07-28T15:05:06.3640715Z 
+2025-07-28T15:05:06.3640821Z BUILD FAILED in 6s
+2025-07-28T15:05:06.7118133Z ##[error]Process completed with exit code 1.
+2025-07-28T15:05:06.7237560Z Post job cleanup.
+2025-07-28T15:05:06.8959387Z Post job cleanup.
+2025-07-28T15:05:06.9889990Z [command]/usr/bin/git version
+2025-07-28T15:05:06.9929477Z git version 2.50.1
+2025-07-28T15:05:06.9974113Z Temporarily overriding HOME='/home/runner/work/_temp/57a42b7f-e928-4a3c-b16f-78ad0b33d79f' before making global git config changes
+2025-07-28T15:05:06.9975484Z Adding repository directory to the temporary git global config as a safe directory
+2025-07-28T15:05:06.9987807Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/iOS-Gallery-/iOS-Gallery-
+2025-07-28T15:05:07.0023960Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-07-28T15:05:07.0059357Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-07-28T15:05:07.0289631Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-07-28T15:05:07.0311861Z http.https://github.com/.extraheader
+2025-07-28T15:05:07.0324928Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-07-28T15:05:07.0354890Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-07-28T15:05:07.0681314Z Cleaning up orphan processes
+2025-07-28T15:05:07.0952376Z Terminate orphan process: pid (2160) (java)

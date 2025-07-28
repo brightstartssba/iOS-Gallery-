@@ -1,0 +1,34 @@
+﻿2025-07-28T15:04:58.3399036Z ##[group]Run ./gradlew clean
+2025-07-28T15:04:58.3400036Z [36;1m./gradlew clean[0m
+2025-07-28T15:04:58.3428663Z shell: /usr/bin/bash -e {0}
+2025-07-28T15:04:58.3430184Z env:
+2025-07-28T15:04:58.3431277Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:58.3433072Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.16-8/x64
+2025-07-28T15:04:58.3434479Z ##[endgroup]
+2025-07-28T15:05:00.5470755Z Downloading https://services.gradle.org/distributions/gradle-8.4-bin.zip
+2025-07-28T15:05:03.2384340Z ............10%............20%.............30%............40%.............50%............60%.............70%............80%.............90%............100%
+2025-07-28T15:05:04.5232774Z 
+2025-07-28T15:05:04.5252927Z Welcome to Gradle 8.4!
+2025-07-28T15:05:04.5253615Z 
+2025-07-28T15:05:04.5254151Z Here are the highlights of this release:
+2025-07-28T15:05:04.5255148Z  - Compiling and testing with Java 21
+2025-07-28T15:05:04.5262362Z  - Faster Java compilation on Windows
+2025-07-28T15:05:04.5263180Z  - Role focused dependency configurations creation
+2025-07-28T15:05:04.5263550Z 
+2025-07-28T15:05:04.5263912Z For more details see https://docs.gradle.org/8.4/release-notes.html
+2025-07-28T15:05:04.5264381Z 
+2025-07-28T15:05:04.9178117Z Starting a Gradle Daemon (subsequent builds will be faster)
+2025-07-28T15:05:06.3179544Z 
+2025-07-28T15:05:06.3630863Z FAILURE: Build failed with an exception.
+2025-07-28T15:05:06.3634073Z 
+2025-07-28T15:05:06.3634579Z * What went wrong:
+2025-07-28T15:05:06.3636899Z The specified settings file '/home/runner/work/iOS-Gallery-/iOS-Gallery-/lasspath' does not exist.
+2025-07-28T15:05:06.3637641Z 
+2025-07-28T15:05:06.3637789Z * Try:
+2025-07-28T15:05:06.3638254Z > Run with --stacktrace option to get the stack trace.
+2025-07-28T15:05:06.3639191Z > Run with --info or --debug option to get more log output.
+2025-07-28T15:05:06.3639789Z > Run with --scan to get full insights.
+2025-07-28T15:05:06.3640349Z > Get more help at https://help.gradle.org.
+2025-07-28T15:05:06.3640708Z 
+2025-07-28T15:05:06.3640809Z BUILD FAILED in 6s
+2025-07-28T15:05:06.7118109Z ##[error]Process completed with exit code 1.
