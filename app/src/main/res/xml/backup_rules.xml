@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <full-backup-content>
-    <!-- Exclude device credentials from backup -->
+    <include domain="file" path="."/>
 </full-backup-content>
